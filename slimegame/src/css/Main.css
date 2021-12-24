@@ -1,0 +1,49 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InfoCard{
+    background-color: #1b1b1c;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    position: relative;
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.InfoCard> .InfoText{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 40px;
+}
+
+.Btn1 {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    color: white;
+    background-color: #1b1b1c;
+    position: relative;
+    width: 100px;
+}
+
+.Btn1:hover{
+        box-shadow: 0 0 40px 40px red inset;
+}
+
+.TextBox{
+    height: 50px;
+    display: flex;
+    
+}
