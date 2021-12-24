@@ -1,6 +1,5 @@
 # SlimeGameWeb3
- GameBuildwith React Js
-
+此项目为基于Polygon的区块链小游戏
 
 环境准备
 
