@@ -1,11 +1,22 @@
 import "../css/Main.css"
+import { useEffect,useState } from "react";
 import {  Link } from "react-router-dom";
 
 
 
-const Main = ()=> {
+const Main = (account,web3)=> {
 
 
+const [name,setName] = useState(0);
+const [skillNum,setSkill] = useState(0);
+const [power,setPower] =useState(0)
+const [nickName,setNick] = useState("一只史莱姆")
+
+
+useEffect(() => {
+    
+    
+}, [])
 
 
 
@@ -20,10 +31,10 @@ const Main = ()=> {
                         <div className="TextBox">
                         <div>名称: <input id="name" type={"text"} style={{height:"50px",width:"200px",color:"black"}} required = {true}></input></div>
                     </div>
-                    <div>战斗力 : 5</div>
-                    <div>技能数 : 1</div>
+                    <div>战斗力 : {power}</div>
+                    <div>技能数 : {skillNum}</div>
                     <div>技能列表 : </div>
-                    <div>称号 : 一只史莱姆</div>
+                    <div>称号 : {nickName}</div>
                 </div>
 
 
@@ -33,6 +44,11 @@ const Main = ()=> {
                 <div className="flex flex-row">
                     <button className="Btn2 mt-5 mr-5" type="button" onClick={()=>{
                         alert(document.getElementById("name").value);
+                        
+
+
+
+
                     }}> 新建存档 </button>
                     <button className="Btn2 mt-5 ml-5" type="button" onClick={()=>{
                         alert(document.getElementById("name").value);
